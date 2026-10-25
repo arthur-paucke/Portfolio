@@ -8,7 +8,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
-    (e: "onMobileClick"): void
+    (_event: "onMobileClick"): void
 }>()
 
 const buttonRef = ref<HTMLElement>()

@@ -21,12 +21,12 @@ onMounted(() => {
     <AppSection
         id="projects"
         label="Showcase"
-        title="Projects and Work Samples"
+        title="Projects built around real problems"
     >
         <div class="flex flex-col items-center gap-32">
             <AppSectionProjectsProject
-                title="File Explorer Plugin for Elgato Streamdeck"
-                description="Explore your files and folders without ever leaving your Stream Deck. The File Explorer Plugin lets you browse directories, preview images, open folders, and even run custom commands. All directly from your Stream Deck keys."
+                title="File Explorer Plugin for Elgato Stream Deck"
+                description="An open-source TypeScript plugin that makes file navigation possible directly from Stream Deck keys. It lets users browse folders, preview images, open directories, and run custom commands without leaving their workflow. The plugin has reached almost 20,000 downloads."
                 image-dir-path="/imgs/projects/streamdeck-fileexplorer"
                 :images-count="5"
                 :tags="[
@@ -40,7 +40,7 @@ onMounted(() => {
 
             <AppSectionProjectsProject
                 title="List of Java repositories - mostly Minecraft plugins"
-                description="A collection of Minecraft Java plugins and other tools I've developed over the years, showcasing my skills in Java programming and Minecraft server customization. I can't share everything publicly though. A majority of my work is related to SmashMC, which isn't open-source. If you're interested in any of these projects or want more information, just contact me."
+                description="A selection of Java plugins and tools I developed over more than two years as part of a volunteer Minecraft server development team. I implemented features and fixed bugs based directly on community feedback. Much of my work for SmashMC is private, but several projects are available here."
                 image-dir-path="/imgs/projects/mc-java-plugins"
                 :images-count="1"
                 :tags="[
@@ -54,7 +54,7 @@ onMounted(() => {
 
             <AppSectionProjectsProject
                 title="SmashMC Website"
-                description="A website for the Minecraft Server Network SmashMC which has thousands of registered players. The website was built using Nuxt.js and TypeScript, with a CMS powered by PocketBase to manage content easily. It also features interactive 3D elements created with Three.js to enhance the user experience. It is responsive and optimized for both desktop and mobile devices. Lately, I have been working on a complete redesign and rebuild of the website, which is currently in beta. The new version aims to maximize performance, accessibility, and overall user experience."
+                description="A responsive website for the SmashMC Minecraft server network, built with Nuxt.js and TypeScript. It uses PocketBase for content management and Three.js for interactive 3D elements. The current redesign focuses on performance, accessibility, and a clearer user experience."
                 image-dir-path="/imgs/projects/smashmc-website"
                 :images-count="11"
                 :tags="[
@@ -70,7 +70,7 @@ onMounted(() => {
 
             <AppSectionProjectsProject
                 title="Interactive Map to manage Areas for Rescue Stations"
-                description="A specialized interactive map for rescue stations, designed for marking and color-coding guard areas, highlighting important locations, and attaching critical information to each marker. Built for a friend currently becoming a paramedic in Germany."
+                description="A specialized interactive map for rescue stations. It helps users mark and color-code service areas, highlight important locations, and attach critical information to each marker."
                 image-dir-path="/imgs/projects/wachbereiche-map"
                 :images-count="5"
                 :tags="[
@@ -84,7 +84,7 @@ onMounted(() => {
 
             <AppSectionProjectsProject
                 title="Studiolution - Inactive Clients Management Tool"
-                description="A browser extension with backend in python that detects inactive clients in Studiolution, a hair salon management software. It highlights clients who haven't booked an appointment in their usual timeframe, helping salons re-engage with them through targeted marketing campaigns. Giftcards can also be sent with one click to encourage bookings."
+                description="A browser extension and Python backend that detects inactive clients in Studiolution, helping salons re-engage them with targeted campaigns. It highlights clients who have missed their usual appointment window and lets staff send a gift card with one click."
                 image-dir-path="/imgs/projects/studiolution-addon"
                 :images-count="6"
                 :tags="[

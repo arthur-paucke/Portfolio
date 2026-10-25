@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
     title: "Minecraft Java Repositories",
-    description: "A collection of my Minecraft Java plugins and tools that I've developed over the years.",
+    description: "A selection of Minecraft Java plugins and tools that I developed over more than two years of volunteer server development.",
 })
 
 const repos: Array<{ title: string, description: string, githubUrl?: string, private: boolean }> = [
@@ -12,24 +12,24 @@ const repos: Array<{ title: string, description: string, githubUrl?: string, pri
     },
     {
         title: "Dynamic Inventory Library (SmashMC)",
-        description: "An abstract inventory management library for Spigot plugins, simplifying the creation and handling of dynamic inventories with features like pagination, custom actions and concurrency support.",
+        description: "An abstract inventory management library for Spigot plugins, simplifying dynamic inventories with pagination, custom actions, and concurrency support.",
         private: true,
     },
     {
         title: "Bonussystem Plugin",
-        description: "A plugin to buy and sell ingame items. Customizable layouts and designs. Supporting ingame currency and transaction tracking in a database.",
+        description: "A plugin for buying and selling in-game items with customizable layouts, in-game currency, and database-backed transaction tracking.",
         private: false,
         githubUrl: "https://github.com/ArtusLama/MC-Plugin-BonusSystem",
     },
     {
         title: "A Modded Minecraft 1.8.9 Client (Experimental)",
-        description: "An experimental Minecraft client for version 1.8.9, featuring various quality-of-life improvements and a custom UI library built with OpenGL.",
+        description: "An experimental Minecraft 1.8.9 client with quality-of-life improvements and a custom UI library built with OpenGL.",
         private: false,
         githubUrl: "https://github.com/ArtusLama/ArtusClient-1.8.9",
     },
     {
         title: "A custom Proxy for Minecraft Servers (Experimental)",
-        description: "An man-in-the-middle proxy for Minecraft servers, allowing inspection and modification of network traffic between the client and server. Built for educational purposes and experimenting with the Minecraft protocol.",
+        description: "An experimental man-in-the-middle proxy for Minecraft servers that allows network traffic to be inspected and modified for educational purposes.",
         private: false,
         githubUrl: "https://github.com/ArtusLama/MITMProxyMinecraft",
     },
@@ -41,13 +41,13 @@ const repos: Array<{ title: string, description: string, githubUrl?: string, pri
     },
     {
         title: "Door Locks Plugin",
-        description: "A simple spigot plugin that allows players to lock and unlock doors using guis and custom key-items.",
+        description: "A Spigot plugin that lets players lock and unlock doors using GUIs and custom key items.",
         private: false,
         githubUrl: "https://github.com/ArtusLama/DoorLocks",
     },
     {
         title: "Learning how to make a custom programming language",
-        description: "A experimental programming language concept designed for educational purposes as a personal project. Its focused on building a custom programming language from the ground up. It explores key aspects of language design, lexing, parsing, and interpretation.",
+        description: "An experimental programming language concept built from the ground up to explore language design, lexing, parsing, and interpretation.",
         private: false,
         githubUrl: "https://github.com/ArtusLama/OwnCodeLang",
     },
@@ -70,7 +70,7 @@ const repos: Array<{ title: string, description: string, githubUrl?: string, pri
             </UiButton>
 
             <h1 class="mt-4 text-2xl font-bold">
-                This is a collection of my Minecraft Java plugins and tools that I've developed over the years.
+                This is a selection of Minecraft Java plugins and tools that I've developed over more than two years of volunteer server development.
             </h1>
 
             <p class="mt-2 text-muted-foreground max-w-2xl">

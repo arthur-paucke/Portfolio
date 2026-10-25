@@ -35,22 +35,31 @@ onMounted(() => {
         </div>
 
         <AppSectionExperienceTimelineItem
+            date-from="Oct 2026"
+            date-to="Oct 2029 (expected)"
+            icon-path="/imgs/logos/experience/school.svg"
+            title="B.Sc. Human-Computer Interaction"
+            subtitle="University of Hamburg"
+            location="Hamburg, Germany"
+            description="I am studying Human-Computer Interaction to combine computer science with psychology and design. The degree gives me the opportunity to explore how people interact with technology and how digital products can be made more intuitive, accessible, and useful in everyday life. I am particularly interested in the relationship between technical implementation, user needs, and the social impact of software."
+        />
+        <AppSectionExperienceTimelineItem
             date-from="Aug 2018"
-            date-to="Jul 2026 (expected)"
+            date-to="Aug 2026"
             icon-path="/imgs/logos/experience/school.svg"
             title="Abitur (A-levels)"
             subtitle="Gymnasium Grootmoor"
             location="Hamburg, Germany"
-            description="Expected July 2026. Focus: Physics, Mathematics, Geography, Informatics. Placed 2nd in a Hamburg citywide school volleyball tournament. Completed three research papers (10–20 pages each) in physics and seminar, developing strong academic writing and research skills."
+            description="Graduated with an Abitur average of 1.3. In the Energy Engineering and Sustainability profile, I worked across mathematics, computer science, physics, geography, and philosophy. This interdisciplinary focus taught me to examine technical solutions not only from a scientific perspective, but also in terms of their environmental, social, and ethical consequences. I also completed several research papers and finished second in a Hamburg-wide school volleyball tournament."
         />
         <AppSectionExperienceTimelineItem
-            date-from="Apr 2024"
+            date-from="Feb 2024"
             date-to="Jul 2025"
             icon-path="/imgs/logos/experience/math_tutor.svg"
             title="Mathematics Tutor"
             subtitle="Gymnasium Grootmoor"
             location="Hamburg, Germany"
-            description="Delivered regular mathematics tutoring sessions across multiple levels, focusing on core concepts and exam strategies. Co-led a 3.5-hour intensive crash course for 20+ students, presenting multiple topics, moderating interactive Q&A, and running guided practice sessions."
+            description="Provided regular, in-person mathematics support for up to three students at a time over one and a half years. I reviewed classroom material, worked through exercises interactively, and taught learning, exam, and problem-solving strategies. Because each student had a different level of prior knowledge, I adapted my explanations and teaching methods to make abstract concepts easier to understand. Together with another tutor, I also led a three-and-a-half-hour mathematics crash course for around 20 participants, presenting several topics, moderating questions, and guiding students through practice problems."
         />
         <AppSectionExperienceTimelineItem
             date-from="Jul 2024"
@@ -59,16 +68,16 @@ onMounted(() => {
             title="Social Care Intern"
             subtitle="TAS Norderstedt (Diakonie Hamburg)"
             location="Norderstedt, Germany"
-            description="Supported daily routines and a structured environment for clients facing homelessness or barriers to work. Assisted with group activities, helped organize daily schedules, and observed support meetings on job and housing issues."
+            description="Supported people experiencing homelessness and other difficult life circumstances in their daily routines. My responsibilities included helping with basic care, hygiene, and community activities, while contributing to a respectful and structured environment. I also gained insight into social counselling by observing and supporting communication with public authorities and the preparation of applications. The experience strengthened my understanding of how important accessible, empathetic support is when people are dealing with complex personal and administrative challenges."
         />
         <AppSectionExperienceTimelineItem
             date-from="Jun 2023"
             date-to="Jul 2023"
             icon-path="/imgs/logos/experience/mindmatters.svg"
-            title="Full-Stack Development Intern"
+            title="Web Development Intern"
             subtitle="Mindmatters"
             location="Hamburg, Germany"
-            description="Developed a functional PWA prototype using NuxtJS, Supabase, and PostgreSQL, taking a product idea from user problem identification to implementation. Designed UI/UX flows in Figma, implemented core frontend and backend features, iteratively refined the solution in an agile environment, and presented the final prototype to the team on the last day of the internship."
+            description="Worked on product development from the initial idea to a functional prototype in a hybrid, agile environment. I analysed the problem and target audience, designed interactive wireframes and user flows in Figma and Miro, and iteratively implemented the product as a full-stack web application using Nuxt.js, Supabase, and PostgreSQL. The internship taught me how closely product decisions, user experience, and technical implementation are connected, and gave me practical experience presenting and refining a solution based on feedback."
         />
     </div>
 </template>

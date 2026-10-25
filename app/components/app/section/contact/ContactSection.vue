@@ -17,7 +17,7 @@
                     Let's Connect!
                 </h2>
                 <p class="text-muted-foreground">
-                    I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out via email or follow me on social media.
+                    I'm open to thoughtful collaborations, product ideas, and conversations about human-centered software. Feel free to reach out via email or follow me on social media.
                 </p>
                 <SocialIconList class="mt-2" />
             </div>

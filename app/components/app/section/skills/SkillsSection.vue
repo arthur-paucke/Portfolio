@@ -3,7 +3,8 @@ const techStack: Array<{
     category: "frontend" | "backend" | "design" | "other"
     title: string
     description: string
-    logoPath: string
+    logoPath?: string
+    icon?: string
     color: string
     link: string
 }> = [
@@ -40,6 +41,14 @@ const techStack: Array<{
         link: "https://tailwindcss.com/",
     },
     {
+        category: "frontend",
+        title: "UnoCSS",
+        description: "On-Demand Atomic CSS Engine",
+        icon: "logos:unocss",
+        color: "#33333326",
+        link: "https://unocss.dev/",
+    },
+    {
         category: "backend",
         title: "Java",
         description: "Backend Development and API Integration",
@@ -56,6 +65,22 @@ const techStack: Array<{
         link: "https://www.python.org/",
     },
     {
+        category: "backend",
+        title: "Supabase",
+        description: "Backend Services and Authentication",
+        icon: "logos:supabase-icon",
+        color: "#3ecf8e26",
+        link: "https://supabase.com/",
+    },
+    {
+        category: "backend",
+        title: "PostgreSQL",
+        description: "Relational Database Development",
+        icon: "logos:postgresql",
+        color: "#4169e126",
+        link: "https://www.postgresql.org/",
+    },
+    {
         category: "design",
         title: "Figma",
         description: "UI/UX Design and general Graphic Design",
@@ -70,6 +95,30 @@ const techStack: Array<{
         logoPath: "/imgs/logos/tech/blender.svg",
         color: "#f5792a26",
         link: "https://www.blender.org/",
+    },
+    {
+        category: "design",
+        title: "Miro",
+        description: "Collaborative Planning and Wireframing",
+        icon: "logos:miro-icon",
+        color: "#ffd02f26",
+        link: "https://miro.com/",
+    },
+    {
+        category: "other",
+        title: "Three.js",
+        description: "Interactive 3D Experiences",
+        icon: "simple-icons:threedotjs",
+        color: "#ffffff26",
+        link: "https://threejs.org/",
+    },
+    {
+        category: "other",
+        title: "Leaflet",
+        description: "Interactive Maps",
+        icon: "simple-icons:leaflet",
+        color: "#19990026",
+        link: "https://leafletjs.com/",
     },
     {
         category: "other",
@@ -110,7 +159,7 @@ const techStack: Array<{
                 :size="18"
                 class="mr-1 -mb-0.5"
             />
-            This is a <b>brief overview</b> of the technologies and tools I have much experience with. There are of course <b>many more technologies</b> I have worked with, but these are the <b>main ones</b> I use on a regular basis.
+            This is a <b>brief overview</b> of the technologies and tools I use most often. I enjoy learning new technologies, but these are the <b>main ones</b> I currently use for building reliable, accessible products.
         </p>
         <AppSectionSkillsAccordion :tech-stack="techStack" />
     </AppSection>

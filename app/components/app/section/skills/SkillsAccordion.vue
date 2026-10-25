@@ -45,11 +45,17 @@ const categories: Record<categoryType, string> = {
                         :link="techItem.link"
                     >
                         <NuxtImg
+                            v-if="techItem.logoPath"
                             :src="techItem.logoPath"
                             alt=""
                             width="32"
                             height="32"
                             class="w-8 h-8 object-contain"
+                        />
+                        <Icon
+                            v-else-if="techItem.icon"
+                            :name="techItem.icon"
+                            :size="32"
                         />
                     </AppSectionSkillsTechItem>
                 </div>

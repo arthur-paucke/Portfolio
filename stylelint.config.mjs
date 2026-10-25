@@ -11,5 +11,6 @@ export default {
         "hue-degree-notation": null,
         "lightness-notation": null,
         "selector-class-pattern": null,
+        "at-rule-prelude-no-invalid": null,
     },
 }

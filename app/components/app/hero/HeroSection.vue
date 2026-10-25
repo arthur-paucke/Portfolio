@@ -78,7 +78,7 @@ onMounted(() => {
                 :id="topTextId"
                 class="font-semibold text-3xl"
             >
-                Hey, I'm
+                Hi, I'm
             </p>
             <h1
                 :id="nameTextId"
@@ -94,7 +94,7 @@ onMounted(() => {
                     class="bg-linear-to-b from-fuchsia-300 to-fuchsia-700 bg-clip-text text-transparent"
                     :style="{ WebkitTextFillColor: 'transparent' }"
                 >
-                    Designer
+                    HCI Student
                 </span>
                 <span>
                     &nbsp;&&nbsp;
