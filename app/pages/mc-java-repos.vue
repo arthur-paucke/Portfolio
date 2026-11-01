@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-    title: "Minecraft Java Repositories",
-    description: "A selection of Minecraft Java plugins and tools that I developed over more than two years of volunteer server development.",
+    title: "Java Repositories & Software Tools",
+    description: "A selection of Java applications, server plugins, client modifications, network proxies, and experimental programming tools.",
 })
 
 const repos: Array<{ title: string, description: string, githubUrl?: string, private: boolean }> = [
@@ -70,13 +70,11 @@ const repos: Array<{ title: string, description: string, githubUrl?: string, pri
             </UiButton>
 
             <h1 class="mt-4 text-2xl font-bold">
-                This is a selection of Minecraft Java plugins and tools that I've developed over more than two years of volunteer server development.
+                Java Repositories, Plugins & Software Tools
             </h1>
 
             <p class="mt-2 text-muted-foreground max-w-2xl">
-                <b>Disclaimer:</b><br>
-                This isn't a complete list. Most of the work related to SmashMC isn't open-source!
-                If you're interested in any of these projects or want more information, just contact me.
+                A selection of personal and community projects I've built in Java — ranging from game server plugins and concurrency libraries to client modifications with custom OpenGL GUIs, network proxies, and language interpreters.
             </p>
 
             <div class="mt-12 flex flex-col gap-4 w-full text-left">

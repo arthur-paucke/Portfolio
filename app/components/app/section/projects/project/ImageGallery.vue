@@ -1,10 +1,16 @@
 <script setup lang="ts">
-const props = defineProps<{
-    imageDirPath: string
-    imagesCount: number
-}>()
+const props = withDefaults(defineProps<{
+    imageDirPath?: string
+    imagesCount?: number
+    youtubeId?: string
+}>(), {
+    imageDirPath: "",
+    imagesCount: 0,
+    youtubeId: undefined,
+})
 
 const imagePaths = computed(() => {
+    if (!props.imageDirPath || !props.imagesCount) return []
     const paths = []
     for (let i = 1; i <= props.imagesCount; i++) {
         const indexString = i.toString().padStart(2, "0")
@@ -16,7 +22,7 @@ const imagePaths = computed(() => {
 
 <template>
     <div class="bg-accent rounded-3xl border p-2 shrink-0 h-fit w-120">
-        <AppSectionProjectsProjectMagnifyImage v-if="imagePaths.length == 1">
+        <AppSectionProjectsProjectMagnifyImage v-if="imagePaths.length === 1">
             <NuxtImg
                 class="w-full rounded-xl aspect-video select-none"
                 :draggable="false"
@@ -26,7 +32,7 @@ const imagePaths = computed(() => {
         </AppSectionProjectsProjectMagnifyImage>
 
         <CarouselCarousel
-            v-else
+            v-else-if="imagePaths.length > 1"
             :gap="12"
             prevent-excessive-dragging
             class="rounded-xl overflow-hidden"

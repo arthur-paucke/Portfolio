@@ -2,11 +2,13 @@
 defineProps<{
     title: string
     description: string
-    imageDirPath: string
-    imagesCount: number
+    imageDirPath?: string
+    imagesCount?: number
     projectUrl?: string
+    projectUrlLabel?: string
+    projectIcon?: string
     githubUrl?: string
-    otherLink?: { label: string, url: string, external?: boolean }
+    otherLink?: { label: string, url: string, external?: boolean, icon?: string }
     tags: { name: string, icon?: string }[]
 }>()
 </script>
@@ -41,7 +43,7 @@ defineProps<{
                 {{ description }}
             </p>
 
-            <div class="mt-4 flex gap-2">
+            <div class="mt-4 flex gap-2 flex-wrap">
                 <UiButton
                     v-if="projectUrl"
                     as-child
@@ -51,8 +53,8 @@ defineProps<{
                         external
                         target="_blank"
                     >
-                        <Icon name="lucide:external-link" />
-                        View Project
+                        <Icon :name="projectIcon || 'lucide:external-link'" />
+                        {{ projectUrlLabel || 'View Project' }}
                     </NuxtLink>
                 </UiButton>
                 <UiButton
@@ -76,10 +78,10 @@ defineProps<{
                 >
                     <NuxtLink
                         :to="otherLink.url"
-                        :external="otherLink.external || true"
-                        :target="otherLink.external ? '_blank' : '_self'"
+                        :external="otherLink.external ?? true"
+                        :target="otherLink.external === false ? '_self' : '_blank'"
                     >
-                        <Icon name="lucide:external-link" />
+                        <Icon :name="otherLink.icon || 'lucide:external-link'" />
                         {{ otherLink.label }}
                     </NuxtLink>
                 </UiButton>

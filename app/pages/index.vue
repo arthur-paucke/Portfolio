@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineOgImageComponent("default")
 useSeoMeta({
-    description: "I'm Arthur Paucke, a Human-Computer Interaction student and developer based in Hamburg, Germany. I build accessible, intuitive software with modern web technologies, TypeScript, Java, and Python.",
+    description: "Arthur Paucke — Human-Computer Interaction student and developer in Hamburg, Germany. Building responsive web applications, physical device extensions, and practical software tools.",
 })
 </script>
 

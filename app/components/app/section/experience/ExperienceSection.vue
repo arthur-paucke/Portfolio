@@ -1,12 +1,16 @@
 <template>
     <AppSection
         id="experience"
-        label="Education, Work & Community"
-        title="Building at the intersection of people and technology"
+        label="Background & Path"
+        title="Practical engineering, human-centered systems, and community"
     >
-        <div class="text-muted-foreground space-y-2 max-w-md">
-            <p>I'm studying Human-Computer Interaction at the University of Hamburg to combine solid computer science with psychology and design.</p>
-            <p>For more details about my background and experience, you can download my CV here:</p>
+        <div class="text-muted-foreground space-y-3 max-w-lg">
+            <p>
+                Human-Computer Interaction student at Universität Hamburg and freelance developer. Combining full-stack engineering with user-centered design to build software that is accessible, fast, and eliminates friction.
+            </p>
+            <p>
+                For a complete overview of my work, academic achievements, and qualifications, you can download my CV:
+            </p>
             <UiButton as-child>
                 <NuxtLink
                     to="/files/CV_ArthurPaucke.pdf"

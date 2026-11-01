@@ -5,7 +5,8 @@ const props = defineProps<{
         category: categoryType
         title: string
         description: string
-        logoPath: string
+        logoPath?: string
+        icon?: string
         color: string
         link: string
     }>

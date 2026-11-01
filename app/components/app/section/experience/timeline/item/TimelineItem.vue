@@ -2,7 +2,8 @@
 defineProps<{
     dateFrom: string
     dateTo: string
-    iconPath: string
+    iconPath?: string
+    iconName?: string
     title: string
     subtitle: string
     location?: string
@@ -60,9 +61,15 @@ onMounted(() => {
             <div class="border rounded-2xl bg-accent/25 px-6 pt-6 pb-4 mt-2 mb-8">
                 <div class="flex gap-4 items-center">
                     <NuxtImg
+                        v-if="iconPath"
                         :src="iconPath"
                         alt="Icon"
                         class="max-h-7 min-w-7"
+                    />
+                    <Icon
+                        v-else-if="iconName"
+                        :name="iconName"
+                        class="size-14 text-primary shrink-0"
                     />
                     <div>
                         <h3 class="font-semibold text-lg leading-4">

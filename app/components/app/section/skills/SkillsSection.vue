@@ -11,7 +11,7 @@ const techStack: Array<{
     {
         category: "frontend",
         title: "Nuxt.js",
-        description: "Full-Stack Vue Applications",
+        description: "Full-Stack Vue Framework",
         logoPath: "/imgs/logos/tech/nuxt.svg",
         color: "#00c58e26",
         link: "https://nuxt.com/",
@@ -19,7 +19,7 @@ const techStack: Array<{
     {
         category: "frontend",
         title: "Vue.js",
-        description: "Building Interactive User Interfaces",
+        description: "Reactive UI Components",
         logoPath: "/imgs/logos/tech/vue.svg",
         color: "#41b88326",
         link: "https://vuejs.org/",
@@ -27,18 +27,10 @@ const techStack: Array<{
     {
         category: "frontend",
         title: "TypeScript",
-        description: "Type-Safe JavaScript Development",
+        description: "Type-Safe Application Architecture",
         logoPath: "/imgs/logos/tech/typescript.svg",
         color: "#3178c626",
         link: "https://www.typescriptlang.org/",
-    },
-    {
-        category: "frontend",
-        title: "TailwindCSS",
-        description: "UI Styling and Responsive Design",
-        logoPath: "/imgs/logos/tech/tailwindcss.svg",
-        color: "#38bdf826",
-        link: "https://tailwindcss.com/",
     },
     {
         category: "frontend",
@@ -49,9 +41,17 @@ const techStack: Array<{
         link: "https://unocss.dev/",
     },
     {
+        category: "frontend",
+        title: "TailwindCSS",
+        description: "Utility-First Styling & Design Systems",
+        logoPath: "/imgs/logos/tech/tailwindcss.svg",
+        color: "#38bdf826",
+        link: "https://tailwindcss.com/",
+    },
+    {
         category: "backend",
         title: "Java",
-        description: "Backend Development and API Integration",
+        description: "Backend Logic & Concurrent Systems",
         logoPath: "/imgs/logos/tech/java.svg",
         color: "#f8981c26",
         link: "https://www.java.com/",
@@ -59,15 +59,23 @@ const techStack: Array<{
     {
         category: "backend",
         title: "Python",
-        description: "Scripting, Backend Services and more",
+        description: "Automation, Scripting & Backend APIs",
         logoPath: "/imgs/logos/tech/python.svg",
         color: "#3776ab26",
         link: "https://www.python.org/",
     },
     {
         category: "backend",
+        title: "PocketBase",
+        description: "Open-Source Backend & Authentication",
+        icon: "logos:pocket-base",
+        color: "#b8db5726",
+        link: "https://pocketbase.io/",
+    },
+    {
+        category: "backend",
         title: "Supabase",
-        description: "Backend Services and Authentication",
+        description: "Backend-as-a-Service & Realtime APIs",
         icon: "logos:supabase-icon",
         color: "#3ecf8e26",
         link: "https://supabase.com/",
@@ -75,7 +83,7 @@ const techStack: Array<{
     {
         category: "backend",
         title: "PostgreSQL",
-        description: "Relational Database Development",
+        description: "Relational Database Architecture",
         icon: "logos:postgresql",
         color: "#4169e126",
         link: "https://www.postgresql.org/",
@@ -83,7 +91,7 @@ const techStack: Array<{
     {
         category: "design",
         title: "Figma",
-        description: "UI/UX Design and general Graphic Design",
+        description: "UI/UX Prototyping & Design Systems",
         logoPath: "/imgs/logos/tech/figma.svg",
         color: "#f24e1e26",
         link: "https://www.figma.com/",
@@ -91,15 +99,23 @@ const techStack: Array<{
     {
         category: "design",
         title: "Blender",
-        description: "3D Modeling, Animation and Rendering",
+        description: "3D Modeling, Texturing & Animation",
         logoPath: "/imgs/logos/tech/blender.svg",
         color: "#f5792a26",
         link: "https://www.blender.org/",
     },
     {
         category: "design",
+        title: "DaVinci Resolve",
+        description: "Video Editing & Grading",
+        logoPath: "/imgs/logos/tech/DaVinci_Resolve_Studio.png",
+        color: "#4169e126",
+        link: "https://www.blackmagicdesign.com/products/davinciresolve",
+    },
+    {
+        category: "design",
         title: "Miro",
-        description: "Collaborative Planning and Wireframing",
+        description: "Collaborative Ideation & User Flows",
         icon: "logos:miro-icon",
         color: "#ffd02f26",
         link: "https://miro.com/",
@@ -107,23 +123,15 @@ const techStack: Array<{
     {
         category: "other",
         title: "Three.js",
-        description: "Interactive 3D Experiences",
+        description: "Interactive 3D Web Experiences",
         icon: "simple-icons:threedotjs",
         color: "#ffffff26",
         link: "https://threejs.org/",
     },
     {
         category: "other",
-        title: "Leaflet",
-        description: "Interactive Maps",
-        icon: "simple-icons:leaflet",
-        color: "#19990026",
-        link: "https://leafletjs.com/",
-    },
-    {
-        category: "other",
         title: "Docker",
-        description: "Containerization and Deployment",
+        description: "Containerization & Deployment",
         logoPath: "/imgs/logos/tech/docker.svg",
         color: "#2496ed26",
         link: "https://www.docker.com/",
@@ -131,7 +139,7 @@ const techStack: Array<{
     {
         category: "other",
         title: "Git",
-        description: "Version Control System",
+        description: "Distributed Version Control",
         logoPath: "/imgs/logos/tech/git.svg",
         color: "#f34f2926",
         link: "https://git-scm.com/",
@@ -139,7 +147,7 @@ const techStack: Array<{
     {
         category: "other",
         title: "GitHub",
-        description: "Code Hosting and Collaboration",
+        description: "Code Hosting, CI/CD & Open Source",
         logoPath: "/imgs/logos/tech/github.svg",
         color: "#f0f0f026",
         link: "https://github.com/",
@@ -150,16 +158,16 @@ const techStack: Array<{
 <template>
     <AppSection
         id="skills"
-        label="Technical Skills"
-        title="Skills and Technologies"
+        label="Technical Toolkit"
+        title="Tools & Technologies"
     >
         <p class="max-w-xl text-muted-foreground mb-6">
             <Icon
-                name="lucide:badge-info"
+                name="lucide:wrench"
                 :size="18"
-                class="mr-1 -mb-0.5"
+                class="mr-1 -mb-0.5 text-primary"
             />
-            This is a <b>brief overview</b> of the technologies and tools I use most often. I enjoy learning new technologies, but these are the <b>main ones</b> I currently use for building reliable, accessible products.
+            The core tools and technologies I use to build performant web applications, physical device integrations, and 3D experiences.
         </p>
         <AppSectionSkillsAccordion :tech-stack="techStack" />
     </AppSection>
