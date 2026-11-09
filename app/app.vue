@@ -15,7 +15,7 @@ useSchemaOrg([
         url: "https://arthur-paucke.de",
         sameAs: [
             "https://www.linkedin.com/in/arthur-paucke/",
-            "https://github.com/ArtusLama",
+            "https://github.com/arthur-paucke",
         ],
     }),
 ])

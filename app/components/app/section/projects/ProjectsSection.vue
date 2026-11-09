@@ -37,7 +37,7 @@ onMounted(() => {
                 ]"
                 project-url="https://marketplace.elgato.com/product/fileexplorer-fcf4f735-1737-440c-a829-4e51578f58eb"
                 project-url-label="Elgato Marketplace"
-                github-url="https://github.com/ArtusLama/streamdeck-fileexplorer"
+                github-url="https://github.com/arthur-paucke/streamdeck-fileexplorer"
             />
 
             <AppSectionProjectsProject

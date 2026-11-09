@@ -13,7 +13,7 @@ const copyMailToClipboard = useThrottleFn(() => {
     <div class="flex gap-2">
         <SocialIcon
             icon="lucide:github"
-            link="https://github.com/ArtusLama"
+            link="https://github.com/arthur-paucke"
             label="GitHub"
         />
         <SocialIcon

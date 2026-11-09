@@ -19,37 +19,37 @@ const repos: Array<{ title: string, description: string, githubUrl?: string, pri
         title: "Bonussystem Plugin",
         description: "A plugin for buying and selling in-game items with customizable layouts, in-game currency, and database-backed transaction tracking.",
         private: false,
-        githubUrl: "https://github.com/ArtusLama/MC-Plugin-BonusSystem",
+        githubUrl: "https://github.com/arthur-paucke/MC-Plugin-BonusSystem",
     },
     {
         title: "A Modded Minecraft 1.8.9 Client (Experimental)",
         description: "An experimental Minecraft 1.8.9 client with quality-of-life improvements and a custom UI library built with OpenGL.",
         private: false,
-        githubUrl: "https://github.com/ArtusLama/ArtusClient-1.8.9",
+        githubUrl: "https://github.com/arthur-paucke/ArtusClient-1.8.9",
     },
     {
         title: "A custom Proxy for Minecraft Servers (Experimental)",
         description: "An experimental man-in-the-middle proxy for Minecraft servers that allows network traffic to be inspected and modified for educational purposes.",
         private: false,
-        githubUrl: "https://github.com/ArtusLama/MITMProxyMinecraft",
+        githubUrl: "https://github.com/arthur-paucke/MITMProxyMinecraft",
     },
     {
         title: "Advanced Hoppers Plugin",
         description: "A Spigot plugin that enhances the functionality of hoppers in Minecraft, adding features like filtering and nearby items pickup.",
         private: false,
-        githubUrl: "https://github.com/ArtusLama/AdvancedHoppersPlugin",
+        githubUrl: "https://github.com/arthur-paucke/AdvancedHoppersPlugin",
     },
     {
         title: "Door Locks Plugin",
         description: "A Spigot plugin that lets players lock and unlock doors using GUIs and custom key items.",
         private: false,
-        githubUrl: "https://github.com/ArtusLama/DoorLocks",
+        githubUrl: "https://github.com/arthur-paucke/DoorLocks",
     },
     {
         title: "Learning how to make a custom programming language",
         description: "An experimental programming language concept built from the ground up to explore language design, lexing, parsing, and interpretation.",
         private: false,
-        githubUrl: "https://github.com/ArtusLama/OwnCodeLang",
+        githubUrl: "https://github.com/arthur-paucke/OwnCodeLang",
     },
 ]
 </script>
