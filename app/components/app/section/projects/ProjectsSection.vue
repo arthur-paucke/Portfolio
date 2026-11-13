@@ -41,7 +41,22 @@ onMounted(() => {
             />
 
             <AppSectionProjectsProject
-                title="Team Array – 3D Car Reveal & Animation"
+                title="lgx.art - Creator Graphics Portfolio"
+                description="A motion-rich portfolio and commission website for a Minecraft and YouTube graphics designer. Built with Nuxt, Vue, TypeScript, Nuxt Content, Zod, and UnoCSS, it combines data-driven portfolio galleries, before-and-after artwork reveals, live YouTube social proof, partner integrations, and validated contact workflows."
+                image-dir-path="/imgs/projects/lgx-art"
+                :images-count="11"
+                project-url="https://lgx.art"
+                project-url-label="Visit lgx.art"
+                github-url="https://github.com/arthur-paucke/Lgx_Website"
+                :tags="[
+                    { name: 'Nuxt.js', icon: 'logos:nuxt-icon' },
+                    { name: 'TypeScript', icon: 'logos:typescript-icon' },
+                    { name: 'GSAP', icon: 'simple-icons:greensock' },
+                ]"
+            />
+
+            <AppSectionProjectsProject
+                title="Team Array - 3D Car Reveal & Animation"
                 description="Complete 3D animation and rendering pipeline produced for Team Array, which won 2nd Place at the STEM Racing World Finals 2024. Handled end-to-end 3D production from texturing and realistic studio lighting in Blender to camera animation and final color grading in DaVinci Resolve. The animation served as the visual centerpiece for the team's enterprise and marketing presentations."
                 image-dir-path="/imgs/projects/team-array-3d-car-reveal"
                 :images-count="5"
@@ -56,7 +71,7 @@ onMounted(() => {
             />
 
             <AppSectionProjectsProject
-                title="Studiolution – Inactive Clients Retention Tool"
+                title="Studiolution - Inactive Clients Retention Tool"
                 description="A custom client-retention tool developed for salons using Studiolution. Combines a Python backend analyzing appointment records with a Vue.js / WXT browser extension that integrates directly into the salon's daily web workflow. Automatically flags clients overdue for appointments and enables staff to trigger re-engagement workflows and gift card incentives with a single click."
                 image-dir-path="/imgs/projects/studiolution-addon"
                 :images-count="6"
@@ -70,7 +85,7 @@ onMounted(() => {
             />
 
             <AppSectionProjectsProject
-                title="SmashMC – Community Platform & Infrastructure"
+                title="SmashMC - Community Platform & Infrastructure"
                 description="Full-stack web platform and backend infrastructure for an active gaming community with thousands of players. Built with Nuxt and TypeScript featuring real-time player leaderboards, dynamic statistics, PocketBase CMS integration, and interactive 3D elements rendered with Three.js. Supported by custom concurrency-safe game plugins and backend services developed in Java."
                 image-dir-path="/imgs/projects/smashmc-website"
                 :images-count="11"

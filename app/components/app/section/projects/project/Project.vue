@@ -4,6 +4,7 @@ defineProps<{
     description: string
     imageDirPath?: string
     imagesCount?: number
+    imageExtension?: string
     projectUrl?: string
     projectUrlLabel?: string
     projectIcon?: string
@@ -22,6 +23,7 @@ defineProps<{
         <AppSectionProjectsProjectImageGallery
             :image-dir-path="imageDirPath"
             :images-count="imagesCount"
+            :image-extension="imageExtension"
             class="xl:w-150 lg:w-100 md:w-150 w-full shrink-0"
         />
 

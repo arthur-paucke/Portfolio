@@ -2,10 +2,12 @@
 const props = withDefaults(defineProps<{
     imageDirPath?: string
     imagesCount?: number
+    imageExtension?: string
     youtubeId?: string
 }>(), {
     imageDirPath: "",
     imagesCount: 0,
+    imageExtension: "png",
     youtubeId: undefined,
 })
 
@@ -14,7 +16,7 @@ const imagePaths = computed(() => {
     const paths = []
     for (let i = 1; i <= props.imagesCount; i++) {
         const indexString = i.toString().padStart(2, "0")
-        paths.push(`${props.imageDirPath}/${indexString}.png`)
+        paths.push(`${props.imageDirPath}/${indexString}.${props.imageExtension}`)
     }
     return paths
 })
