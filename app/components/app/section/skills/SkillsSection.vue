@@ -89,6 +89,14 @@ const techStack: Array<{
         link: "https://www.postgresql.org/",
     },
     {
+        category: "backend",
+        title: "SQLite",
+        description: "Embedded Relational Databases",
+        icon: "lucide:database",
+        color: "#0f80cc26",
+        link: "https://www.sqlite.org/",
+    },
+    {
         category: "design",
         title: "Figma",
         description: "UI/UX Prototyping & Design Systems",

@@ -54,7 +54,7 @@ onMounted(() => {
         />
         <AppSectionExperienceTimelineItem
             date-from="Dec 2023"
-            date-to="Jan 2026"
+            date-to="Feb 2026"
             icon-name="lucide:users"
             title="Volunteer Software Engineer"
             subtitle="SmashMC"
@@ -90,7 +90,7 @@ onMounted(() => {
         />
         <AppSectionExperienceTimelineItem
             date-from="Aug 2018"
-            date-to="Aug 2026"
+            date-to="Jul 2026"
             icon-path="/imgs/logos/experience/school.svg"
             title="Abitur (A-levels)"
             subtitle="Gymnasium Grootmoor"
